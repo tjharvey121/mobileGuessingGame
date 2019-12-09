@@ -1,3 +1,8 @@
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log(navigator.vibrate);
+}
+
 function playGame () {
     document.location.href = "playPage.html";
 }
@@ -44,6 +49,7 @@ function alertUser (result) {
         alert("Your guess was correct, congrats!")
         document.getElementById("submit").disabled = true;
         document.getElementById("guess").disabled = true;
+        naviagor.vibrate(1000);
     }
     else if (result == "high") {
         numGuesses++;

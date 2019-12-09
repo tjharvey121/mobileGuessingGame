@@ -1,0 +1,141 @@
+body {
+    font-family: verdana;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 10em;
+}
+
+#second {
+    margin-top: 1em;
+}
+
+#third {
+    margin-top: 2em;
+    text-align: left;
+    margin-left: 25em;
+}
+
+.sidebarleft {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #c6c6c6;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebarright {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #c6c6c6;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebarTop {
+    height: 160px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #c6c6c6;
+    overflow-y: hidden;
+}
+
+.sidebarBottom {
+    height: 160px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    background-color: #c6c6c6;
+    overflow-y: hidden;
+}
+
+input {
+    text-align: center;
+    margin-left: 43%;
+    margin-top: 2em;
+}
+
+button {
+    margin-left: 42.9%;
+    margin-top: 1em;
+    width: 12.3em;
+}
+
+#anotherButton {
+    margin-left: 25%;
+    font-size: 150%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#other {
+    margin-left: 5em;
+    font-size: 150%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+    
+    .sidebarleft {
+        display: none;
+    }
+
+    .sidebarright {
+        display: none;
+    }
+
+    .sidebarTop {
+        display: none;  
+    }
+
+    .sidebarBottom {
+        display: none;
+    }
+    
+    h3 {
+        text-align: center;
+        margin-top: 5em;
+    }
+    input {
+        text-align: center;
+        margin-left: 25%;
+        margin-top: 2em;
+    }
+    button {
+        margin-left: 28%;
+        margin-top: 1em;
+        width: 12.3em;
+    }
+    #third {
+        margin-top: 2em;
+        text-align: left;
+        margin-left: 4em;
+    }
+    #anotherButton {
+        margin-left: 25%;
+        font-size: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #other {
+        margin-left: 25%;
+        font-size: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}

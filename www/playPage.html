@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta lang="en">
+        <title> Main Page </title>
+        <link type="text/css" rel="stylesheet" href="css/playPage.css">
+        <script type="text/javascript" src="js/mng.js"></script>
+    </head>
+    
+    <body onload="generateNumber()">
+        <div class="sidebarleft"></div>
+        <div class="sidebarright"></div>
+        <div class="sidebarTop"></div>
+        <div class="sidebarBottom"></div>
+        
+        
+        <h3> Pick a number between 1 and 50 and type your guess into the box </h3>
+                
+        <h3 id="second"> 
+            The system will then tell you whether you went over, under, and right on!
+        </h3>
+        
+        <input type="text" id="guess" autocomplete="off" onkeydown = "if (event.keyCode == 13){document.getElementById('submit').click()}">
+        <button id="submit" onclick="submitGuess()"> Submit </button>
+        
+        <h2 id="third"> Total Guesses: </h2>
+        
+        <button id="anotherButton" onclick="reset()"> Reset </button>
+        <button id="other" onclick="backToMenu()"> Back to Menu </button>
+        
+    </body>
+</html>
